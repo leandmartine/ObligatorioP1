@@ -107,6 +107,10 @@ thead {
   font-weight: normal;
 }
 
+#negro {
+  text-align: left;
+}
+
 table img {
   max-width: 100px;
 }

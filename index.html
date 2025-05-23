@@ -22,7 +22,7 @@
           <a>Sección 3</a>
         </li>
         <li>
-          <a>Sección 4</a>
+          <a>Cerrar sesion</a>
         </li>
       </ul>
     </nav>
@@ -37,62 +37,78 @@
       <h4>Titulo 4</h4>
       <hr>
       <!-- INPUTS -->
-      <h3>Inputs</h3>
-      <label for="txtTexto">txtTexto</label>
+      <h3>Seleccione un paseador</h3>
+      <!--<label for="txtTexto">Nombre de usuario</label>
       <input type="text" id="txtTexto" />
       <label for="nbrNumero">nbrNumero</label>
-      <input type="number" id="nbrNumero" />
-      <label for="txtPass">txtPass</label>
-      <input type="password" id="txtPass" />
+      <input type="number" id="nbrNumero" /> 
+      <label for="txtPass">Contraseña</label>
+      <input type="password" id="txtPass" /> -->
+      <!-- <label for="txtNombrePerro">Nombre de su perro</label>
+      <input type="text" id="txtNombrePerro" />
       <label for="txtComentarios">Text Area</label>
-      <textarea id="txtComentarios"></textarea>
-      <label for="slcOpciones">Select</label>
-      <select id="slcOpciones">
-        <option value="1">opcion 1</option>
-        <option value="2">opcion 2</option>
-        <option value="3">opcion 3</option>
-      </select>
-      <input type="button" value="Enviar" /><br />
+      <textarea id="txtComentarios"></textarea> -->
+      <label for="slcOpciones">Paseadores disponibles</label>
+      <select id="slcOpciones" disabled>
+        <option value="1">Seleccione una opcion...</option>
+        <option value="2">Carlos</option>
+        <option value="3">Pedro</option>
+        <option value="4" disabled>Richard</option>
+
+      </select> 
+      <input type="button" value="Agendar" disabled/>
+      <p>Se ha agendado el paseador <br> <a href="#">Consultar solicitudes pendientes</a></p>
+      <br>
       <hr />
 
     </section>
 
     <!-- TABLA -->
-    <h3>Resumen</h3>
+    <h3>Perros asignados</h3>
     <table>
       <thead>
         <tr>
-          <th>Nombre</th>
-          <th>Precio</th>
-          <th>Imagen</th>
+          <th>ID</th>
+          <th>Nombre del perro</th>
+          <th>Tamaño del perro</th>
+          <!--<th id="negro">Modificar estado</th>-->
           <th></th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>
-            Nombre 1
+            #0003
           </td>
-          <td>30</td>
-          <td><img src="https://place-hold.it/100x100/aaa/imagen.jpg" alt="prueba"></td>
           <td>
-            <input type="button" value="Acción" />
+            Pulga
+          </td>
+          <td>Mediano</td>
+          <!--<td>30</td>
+          <td><img src="https://place-hold.it/100x100/aaa/imagen.jpg" alt="prueba"></td> -->
+          <td>
+          
           </td>
         </tr>
         <tr>
+          <td>#0002</td>
+          <td>Ruffo</td>
+          <td>Chico</td>
+          </tr>
+        <!-- <tr>
           <td>
-            9
+            Paseador 2
           </td>
           <td>30</td>
-          <td><img src="https://place-hold.it/100x100/aaa/imagen.jpg" alt="prueba"></td>
+          <td><img src="https://place-hold.it/100x100/aaa/imagen.jpg" alt="prueba"></td> 
           <td>
-            <input type="button" value="Accion" />
+            <input type="button" value="Agendar" />
           </td>
-        </tr>
-
+        </tr>-->
       </tbody>
     </table>
-
+          <p>Cupos disponibles: 1</p>
+    <br>
     <p>
       Donec dapibus arcu a diam commodo, vel vehicula orci volutpat.
       Vestibulum convallis tempor mattis. Donec molestie semper leo vel
